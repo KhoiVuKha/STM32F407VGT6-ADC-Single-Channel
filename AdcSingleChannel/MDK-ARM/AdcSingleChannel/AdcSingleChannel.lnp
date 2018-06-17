@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"adcsinglechannel\startup_stm32f407xx.o"
+"adcsinglechannel\main.o"
+"adcsinglechannel\stm32f4xx_it.o"
+"adcsinglechannel\stm32f4xx_hal_msp.o"
+"adcsinglechannel\stm32f4xx_hal_adc.o"
+"adcsinglechannel\stm32f4xx_hal_adc_ex.o"
+"adcsinglechannel\stm32f4xx_hal_tim.o"
+"adcsinglechannel\stm32f4xx_hal_tim_ex.o"
+"adcsinglechannel\stm32f4xx_hal_rcc.o"
+"adcsinglechannel\stm32f4xx_hal_rcc_ex.o"
+"adcsinglechannel\stm32f4xx_hal_flash.o"
+"adcsinglechannel\stm32f4xx_hal_flash_ex.o"
+"adcsinglechannel\stm32f4xx_hal_flash_ramfunc.o"
+"adcsinglechannel\stm32f4xx_hal_gpio.o"
+"adcsinglechannel\stm32f4xx_hal_dma_ex.o"
+"adcsinglechannel\stm32f4xx_hal_dma.o"
+"adcsinglechannel\stm32f4xx_hal_pwr.o"
+"adcsinglechannel\stm32f4xx_hal_pwr_ex.o"
+"adcsinglechannel\stm32f4xx_hal_cortex.o"
+"adcsinglechannel\stm32f4xx_hal.o"
+"adcsinglechannel\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "AdcSingleChannel\AdcSingleChannel.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "AdcSingleChannel.map" -o AdcSingleChannel\AdcSingleChannel.axf
