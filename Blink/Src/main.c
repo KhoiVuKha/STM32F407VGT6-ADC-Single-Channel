@@ -21,6 +21,7 @@ static void MX_GPIO_Init(void);
 /* Private function prototypes -----------------------------------------------*/
 
 
+
 /**
   * @brief  The application entry point.
   *
